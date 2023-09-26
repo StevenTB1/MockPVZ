@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id='title' style="display: block">
+    <img src="./images/title.jpg">
+    <audio id='titlemusic' controls autoplay>
+      <source src="./music/Theme.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <div id='rules' style="visibility: hidden">
+    <img src="./images/instructions.png">
+  </div>
+
+  <div id='end' style="visibility: hidden">
+    <img src="./images/end.jpg">
+    <audio id='endingmusic' controls>
+      <source src="./music/Title.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <div id='win' style="visibility: hidden">
+    <img src="./images/win.jpg">
+  </div>
+
+  <canvas id='gameScreen' style="visibility: hidden">
+    <audio id='gamemusic' controls>
+      <source src="./music/Day.mp3" type="audio/mp3">
+    </audio>
+  </canvas>
+  
+
+  <script src='controller.js'></script>
+  <script src='physics.js'></script>
+  <!--   All the plant related files -->
+  <script src='./plants/plant.js'></script>
+  <script src='./plants/peashooter.js'></script>
+  <script src='./plants/sunflower.js'></script>
+  <script src='./plants/wallnut.js'></script>
+  <script src='./plants/potatomine.js'></script>
+  <script src='./plants/repeater.js'></script>
+  <script src='./plants/plantcontrol.js'></script>
+
+  <!--   All the plant related files -->
+  <script src='./bullet/bullet.js'></script>
+  <script src='./bullet/bulletcontrol.js'></script>
+
+  <!--   All the zombie related files -->
+  <script src='./zombies/zombie.js'></script>
+  <script src='./zombies/normalzombie.js'></script>
+  <script src='./zombies/coneheadzombie.js'></script>
+  <script src='./zombies/bucketzombie.js'></script>
+  <script src='./zombies/zombiecontrol.js'></script>
+
+  <!--   All the seedslots related files -->
+  <script src='./seedslot/seedslot.js'></script>
+  <script src='./seedslot/seed.js'></script>
+  <script src='./seedslot/peashooterseed.js'></script>
+  <script src='./seedslot/sunflowerseed.js'></script>
+  <script src='./seedslot/wallnutseed.js'></script>
+  <script src='./seedslot/potatomineseed.js'></script>
+  <script src='./seedslot/repeaterseed.js'></script>
+
+  <!--   All the sun related files -->
+  <script src='./sun/sun.js'></script>
+  <script src='./sun/suncount.js'></script>
+  <script src='./sun/suncontrol.js'></script>
+  <script src='./sun/fallingsun.js'></script>
+
+  <script src='map.js'></script>
+  <script src='block.js'></script>
+  <script src='blockcontrol.js'></script>
+  <script src='gameProgress.js'></script>
+  <script src='game.js'></script>
+  <script src='canvas.js'></script>
+  <script src='menu.js'></script>
+
+</body>
+
+</html>
